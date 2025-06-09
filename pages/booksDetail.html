@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Library</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- icon -->
+    <link rel="icon" href="../images/logo.png">
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <nav class="bg-[#2E7D32] px-5 h-[50px] flex items-center justify-between fixed top-0 left-0 right-0 z-50 w-full">
+        <a href="../home.html" class="pacifico-regular text-lg text-white">Edge Library</a>
+        <div class="relative flex items-center w-[850px] max-w-full">
+            <input type="search" placeholder="Search title books"
+                class="w-full pl-4 pr-8 py-1.5 border border-gray-300 rounded-full focus:outline-none focus:none" />
+            <img src="../images/search.png" alt="search-btn" class="absolute right-3 w-4 h-4">
+        </div>
+        <div class="flex justify-between">
+            <a href="./books.html" class="text-white text-lg font-semibold mx-2">Books</a>
+            <img class="w-6 h-6 mx-2" src="../images/notification.png" alt="notification-btn">
+            <img class="w-6 h-6 mx-2" src="../images/favorite.png" alt="favorite-btn">
+        </div>
+        <div class="flex items-center justify-center border border-gray-300 rounded-full w-[40px] h-[40px] overflow-hidden">
+            <img src="../images/profile.png" alt="profile" class="w-[30px] h-[30px] object-cover">
+        </div>
+    </nav>
+
+    <a href="./books.html" class="w-full h-[50px] flex justify-start fixed top-[60px] left-5 z-40">
+        <img class="w-7 h-7 hover:scale-110 transition-transform duration-200" src="../images/back.png" alt="menu-btn">
+    </a>
+
+    <main class="mt-[80px] mx-6 flex justify-around">
+        <div class="relative w-[425px] h-[500px] overflow-hidden rounded-xl">
+            <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
+                <img class="w-[425px] h-[500px] flex-shrink-0" src="../images/books1.jpg" alt="books1">
+                <img class="w-[425px] h-[500px] flex-shrink-0" src="../images/books2.jpg" alt="books2">
+                <img class="w-[425px] h-[500px] flex-shrink-0" src="../images/books3.jpg" alt="books3">
+            </div>
+        </div>
+
+        <div class="w-[700px] h-[500px] flex flex-col justify-between px-4">
+            <div>
+                <div class="flex justify-between">
+                    <span class="poppins-black text-[36px]">Harry Potter 1</span>
+                    <img class="w-7 h-7" src="../images/favorite-books.png" alt="favorite-btn">
+                </div>
+                <div class="flex gap-1">
+                    <img class="w-5 h-5" src="../images/calendar.png" alt="year">
+                    <span class="hover:text-emerald-600">1997</span>
+                </div>
+                <div class="flex gap-1">
+                    <img class="w-5 h-5" src="../images/author.png" alt="author">
+                    <span class="hover:text-emerald-600">J.K. Rowling</span>
+                </div>
+                <div>
+                    <span>Description</span>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aspernatur assumenda voluptas perferendis nostrum quisquam voluptatibus saepe quos ducimus tempore sed tenetur nesciunt nam, qui corporis vel beatae doloribus quasi non possimus! Et dignissimos eaque itaque, quisquam voluptatibus sapiente, exercitationem nemo velit quas excepturi ea voluptatum, perspiciatis neque hic rem architecto! Blanditiis placeat perferendis deleniti tenetur, incidunt exercitationem corporis inventore. Voluptas laboriosam natus debitis, neque deleniti eligendi nostrum cumque. Veritatis excepturi, asperiores, accusantium soluta voluptatum ex architecto, corporis perspiciatis vero quisquam temporibus atque distinctio dolorum amet quos maxime suscipit! Obcaecati magni rerum deleniti, laboriosam provident tenetur itaque harum a doloremque?.</p>
+                </div>
+            </div>
+
+            <a class="block w-full bg-emerald-600 hover:bg-emerald-700 text-white rounded-full py-2 px-4 text-center transition-colors duration-200" href="./readingPage.html">Start Reading</a>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

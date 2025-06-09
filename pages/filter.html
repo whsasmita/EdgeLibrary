@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Library</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- icon -->
+    <link rel="icon" href="../images/logo.png">
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <nav class="bg-[#2E7D32] px-5 h-[50px] flex items-center justify-between">
+        <a href="../home.html" class="pacifico-regular text-lg text-white">Edge Library</a>
+        <div class="relative flex items-center w-[850px] max-w-full">
+            <input type="search" placeholder="Search title books"
+                class="w-full pl-4 pr-8 py-1.5 border border-gray-300 rounded-full focus:outline-none focus:none" />
+            <img src="../images/search.png" alt="search-btn" class="absolute right-3 w-4 h-4">
+        </div>
+        <div class="flex justify-between">
+            <a href="./books.html" class="text-white text-lg font-semibold mx-2">Books</a>
+            <img class="w-6 h-6 mx-2" src="../images/notification.png" alt="notification-btn">
+            <img class="w-6 h-6 mx-2" src="../images/favorite.png" alt="favorite-btn">
+        </div>
+        <div class="flex items-center justify-center border border-gray-300 rounded-full w-[40px] h-[40px] overflow-hidden">
+            <img src="../images/profile.png" alt="profile" class="w-[30px] h-[30px] object-cover">
+        </div>
+    </nav>
+</body>
+</html>
